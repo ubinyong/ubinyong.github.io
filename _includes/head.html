@@ -1,20 +1,27 @@
-<!-- THEME BOOTSTRAP: 첫 페인트 전에 data-theme 확정 -->
-<script>
-(function () {
-  try {
-    var saved = localStorage.getItem('theme');
-    // 기본은 라이트
-    var isDark = !!(saved && /dark/i.test(saved));
-    document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
-  } catch (e) {
-    document.documentElement.setAttribute('data-theme', 'light');
+<link rel="stylesheet" href="{{ '/assets/css/theme.css' | relative_url }}?v=final2">
+
+<style id="theme-final">
+  #themeToggle.theme-toggle{
+    -webkit-appearance:none !important; appearance:none !important;
+    background:transparent !important; border:none !important;
+    padding:.25rem .4rem !important; line-height:0 !important;
+    display:inline-flex !important; align-items:center !important; justify-content:center !important;
+    color:#1a1a1a !important; position:fixed !important; left:16px !important; bottom:16px !important;
+    z-index:99999 !important; width:44px !important; height:44px !important;
   }
-})();
-</script>
+  html[data-theme="dark"] #themeToggle.theme-toggle{ color:#faf9f6 !important; }
 
+  #themeToggle .icon{
+    position:absolute !important; inset:0 !important; margin:auto !important;
+    width:100% !important; height:100% !important; display:block !important;
+    stroke:currentColor !important; fill:none !important; stroke-width:2 !important;
+    stroke-linecap:round !important; stroke-linejoin:round !important;
+    pointer-events:none !important; opacity:0 !important; visibility:hidden !important;
+  }
+  #themeToggle .icon-moon{ fill:currentColor !important; stroke:none !important; }
 
-<link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@500&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="{{ '/assets/css/theme.css' | relative_url }}?v=7">
-
-<script defer src="{{ '/assets/js/theme.js' | relative_url }}"></script>
+  /* 라이트=달, 다크=해 */
+  #themeToggle .icon-moon{ opacity:1 !important; visibility:visible !important; }
+  html[data-theme="dark"] #themeToggle .icon-moon{ opacity:0 !important; visibility:hidden !important; }
+  html[data-theme="dark"] #themeToggle .icon-sun { opacity:1 !important; visibility:visible !important; }
+</style>
