@@ -19,8 +19,8 @@ html[data-theme="dark"] #themeToggle.theme-toggle{ color:#faf9f6; } /* 다크=�
 
 /* 아이콘 */
 #themeToggle.theme-toggle .icon{
-  width:24px;
-  height:24px;
+  width:24px !important;
+  height:24px !important;
   display:block;
   stroke:currentColor;
   fill:none;
