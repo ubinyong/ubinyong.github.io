@@ -58,7 +58,7 @@ main,.site-main,.page,.page-content{
   color:var(--primary-text-color) !important;
 }
 
-/* === 좌하단 고정 + 버튼 리셋 === */
+/* 좌하단 고정 + 버튼 리셋 */
 #themeToggle.theme-toggle{
   -webkit-appearance:none !important;
   appearance:none !important;
@@ -69,17 +69,17 @@ main,.site-main,.page,.page-content{
   display:inline-flex !important;
   align-items:center !important;
   justify-content:center !important;
-  color:#1a1a1a !important;                 /* 라이트=검정 */
+  color:#1a1a1a !important;
   position:fixed !important;
   left:16px !important;
   bottom:16px !important;
   z-index:9999 !important;
 }
-html[data-theme="dark"] #themeToggle.theme-toggle{ color:#faf9f6 !important; } /* 다크=흰색 */
+html[data-theme="dark"] #themeToggle.theme-toggle{ color:#faf9f6 !important; }
 
-/* === 아이콘 크기 강제 (인라인/글로벌 규칙 무력화) === */
+/* 아이콘 크기 강제 */
 #themeToggle.theme-toggle .icon{
-  width:36px !important;       /* 원하면 44px로 변경 */
+  width:36px !important;
   height:36px !important;
   display:block !important;
   stroke:currentColor !important;
@@ -90,9 +90,10 @@ html[data-theme="dark"] #themeToggle.theme-toggle{ color:#faf9f6 !important; } /
 }
 #themeToggle.theme-toggle .icon-moon{ fill:currentColor !important; stroke:none !important; }
 
-/* === 한쪽만 보이게 (라이트=달, 다크=해) === */
+/* 라이트=달, 다크=해 (둘 중 하나만 표시) */
 #themeToggle .icon-sun  { display:none !important; }
 #themeToggle .icon-moon { display:block !important; }
 html[data-theme="dark"] #themeToggle .icon-sun  { display:block !important; }
 html[data-theme="dark"] #themeToggle .icon-moon { display:none  !important; }
+
 
