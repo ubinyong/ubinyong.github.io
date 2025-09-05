@@ -95,3 +95,12 @@ html[data-theme="dark"] #themeToggle.theme-toggle {
 /* 다크: 해만 보임 */
 html[data-theme="dark"] #themeToggle .icon-moon { opacity: 0 !important; visibility: hidden !important; }
 html[data-theme="dark"] #themeToggle .icon-sun  { opacity: 1 !important; visibility: visible !important; }
+
+/* 홈 제목 폰트 강제: Bebas Neue */
+html body h1#homeTitle,
+html body h1#homeTitle span {
+  font-family: "Bebas Neue", sans-serif !important;
+  font-weight: 400 !important;
+  letter-spacing: 1px;
+}
+
