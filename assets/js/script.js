@@ -16,6 +16,7 @@
 
   const init = () => {
     const select = document.getElementById('themeSelector');
+    if (!select) return; 
     // 셀렉트 옵션 자동 생성
     select.innerHTML = Object.keys(themeMap)
       .map(n => `<option value="${n}">${n.charAt(0).toUpperCase()}${n.slice(1)}</option>`)
