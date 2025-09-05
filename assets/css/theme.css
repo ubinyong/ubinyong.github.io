@@ -107,3 +107,12 @@ html[data-theme="dark"] #themeToggle.theme-toggle{ color:#faf9f6 !important; }
 html[data-theme="dark"] #themeToggle .icon-moon{ opacity:0 !important; visibility:hidden !important; }
 html[data-theme="dark"] #themeToggle .icon-sun { opacity:1 !important; visibility:visible !important; }
 
+/* 홈 제목 폰트: Bebas Neue */
+#homeTitle,
+.home-title {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;  /* Bebas Neue는 보통 한 굵기 */
+  letter-spacing: 1px; /* 필요시 글자 간격 조절 */
+}
+
+
