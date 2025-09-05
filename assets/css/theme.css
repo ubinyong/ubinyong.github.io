@@ -86,3 +86,10 @@ main, .site-main, .page, .page-content {
   stroke: none !important;
 }
 
+/* 라이트=해, 다크=달 */
+#themeToggle .icon-sun { display: block !important; }
+#themeToggle .icon-moon { display: none !important; }
+html[data-theme="dark"] #themeToggle { color: #faf9f6; } /* 아이콘 흰색 */
+html[data-theme="dark"] #themeToggle .icon-sun { display: none !important; }
+html[data-theme="dark"] #themeToggle .icon-moon { display: block !important; }
+
