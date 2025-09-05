@@ -95,6 +95,27 @@ html[data-theme="dark"] #themeToggle .icon-sun { opacity:1; visibility:visible; 
   function init() {
     injectFinalStyles();         // ★ 스타일 한 번만 주입(24px 버전)
     mountToggleAndBind();        // ★ 버튼 위치/핸들러 확정
+    document.addEventListener('click', function(e){
+  const tgt = e.target.closest && e.target.closest('#themeToggle');
+  if (!tgt) return;
+  e.preventDefault();
+  e.stopPropagation();
+  e.stopImmediatePropagation?.();
+  // 실제 토글 실행
+  const STORAGE_KEY = 'theme';
+  const current = localStorage.getItem(STORAGE_KEY) || 'default-light';
+  const next = /dark/i.test(current) ? 'default-light' : 'default-dark';
+  // 변수+data-theme 동기화
+  const theme = (window.themeMap || {
+    'default-light': {'background-color':'#faf9f6','text-color':'#1a1a1a','highlight-color':'#faf9f6'},
+    'default-dark' : {'background-color':'#1a1a1a','text-color':'#faf9f6','highlight-color':'#1a1a1a'}
+  })[next];
+  for (const [k,v] of Object.entries(theme)) {
+    document.documentElement.style.setProperty(`--primary-${k}`, v);
+  }
+  document.documentElement.setAttribute('data-theme', /dark/i.test(next) ? 'dark' : 'light');
+  localStorage.setItem(STORAGE_KEY, next);
+}, /* useCapture */ true);
     const saved = localStorage.getItem(STORAGE_KEY) || 'default-light';
     applyTheme(saved);           // 초기 테마 반영
   }
