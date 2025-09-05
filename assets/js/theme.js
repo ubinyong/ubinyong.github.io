@@ -164,7 +164,7 @@ html[data-theme="dark"] #themeToggle .icon-sun { opacity:1; visibility:visible; 
   // 초기 적용
   function init() {
     injectFinalStyles();
-    moveButtonToBody();
+    mountToggleAndBind();
 
     const saved = localStorage.getItem(STORAGE_KEY) || 'default-light';
     applyTheme(saved);
