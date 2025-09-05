@@ -1,40 +1,39 @@
-/* 버튼 스타일: 테두리 제거, 기본 색(라이트=검정) */
-.theme-toggle {
-  background: transparent;
-  border: 0;
-  padding: .25rem;
-  cursor: pointer;
-  line-height: 1;
-  color: #111;
-  /* ❌ font-size: 0 쓰지 마세요 — SVG가 1em을 따를 경우 0이 됩니다 */
+/* === 해/달 토글 버튼 (강제 리셋 + 크기 고정) === */
+.theme-toggle{
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  background: transparent !important;
+  border: none !important;          /* 테두리 제거 */
+  padding: .25rem .4rem !important; /* 클릭 영역 */
+  line-height: 0 !important;        /* 이모지/텍스트 높이 영향 제거 */
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 8px !important;    /* 필요 없으면 0 */
+  color: #111 !important;           /* 라이트=검정 */
 }
+html[data-theme="dark"] .theme-toggle{ color:#faf9f6 !important; } /* 다크=흰색 */
 
-/* 다크에서는 흰색 아이콘 */
-html[data-theme="dark"] .theme-toggle { color: #faf9f6; }
-
-/* 아이콘 크기를 px로 명시 (em 의존 X) */
-.theme-toggle .icon {
-  width: 36px;
-  height: 36px;
-  display: inline-block;
-  vertical-align: middle;
-  stroke: currentColor;
-  fill: none;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+/* 아이콘: 글로벌 svg 규칙을 이겨야 함 → !important 로 크기 고정 */
+.theme-toggle .icon{
+  width: 36px !important;           /* 더 키우려면 40~44px */
+  height: 36px !important;
+  display: block !important;        /* inline 규칙 무시 */
+  stroke: currentColor !important;
+  fill: none !important;
+  stroke-width: 2 !important;
+  stroke-linecap: round !important;
+  stroke-linejoin: round !important;
 }
-
 /* 달은 채움 */
-.theme-toggle .icon-moon { fill: currentColor; stroke: none; }
+.theme-toggle .icon-moon{ fill: currentColor !important; stroke: none !important; }
 
-/* 기본: 라이트 모드 → 해 보이기, 달 숨기기 */
-.theme-toggle .icon-sun { display: inline-block; }
-.theme-toggle .icon-moon { display: none; }
-
-/* 다크 모드 → 달 보이기, 해 숨기기 */
-html[data-theme="dark"] .theme-toggle .icon-sun { display: none; }
-html[data-theme="dark"] .theme-toggle .icon-moon { display: inline-block; }
+/* 라이트=해 보임, 달 숨김 */
+.theme-toggle .icon-sun{ display:block !important; }
+.theme-toggle .icon-moon{ display:none !important; }
+/* 다크=달 보임, 해 숨김 */
+html[data-theme="dark"] .theme-toggle .icon-sun{ display:none !important; }
+html[data-theme="dark"] .theme-toggle .icon-moon{ display:block !important; }
 
 
 /* === 1) 라이트/다크 테마 변수 정의 (복구) === */
