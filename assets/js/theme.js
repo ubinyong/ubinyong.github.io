@@ -32,13 +32,13 @@ const themeMap = {
   };
 
   const updateToggleUI = (name) => {
-    const btn = document.getElementById('themeToggle');
-    if (!btn) return;
-    const isDark = (name === DARK);
-    btn.textContent = isDark ? '☀️' : '🌙';  // 현재가 다크면 라이트 아이콘(전환 아이콘)
-    btn.title = isDark ? '라이트 테마로' : '다크 테마로';
-    btn.setAttribute('aria-pressed', String(isDark));
-  };
+  const btn = document.getElementById('themeToggle');
+  if (!btn) return;
+  const isDark = (name === DARK);
+  btn.textContent = isDark ? '☀️' : '🌙'; // 라이트=🌙, 다크=☀️
+  btn.title = isDark ? '라이트 테마로' : '다크 테마로';
+  btn.setAttribute('aria-pressed', String(isDark));
+};
 
   const init = () => {
     const btn = document.getElementById('themeToggle');
