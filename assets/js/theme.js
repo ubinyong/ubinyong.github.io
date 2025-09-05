@@ -1,3 +1,9 @@
+- const preferDark = window.matchMedia?.('(prefers-color-scheme: dark)').matches;
+- const saved = localStorage.getItem(STORAGE_KEY);
+- const initial = saved ?? (preferDark ? DARK : LIGHT);
++ const saved = localStorage.getItem(STORAGE_KEY);
++ const initial = saved ?? LIGHT;  // ← OS 선호 무시하고 기본을 라이트로 고정
+
 // 테마 맵
 const themeMap = {
   'default-light': {
