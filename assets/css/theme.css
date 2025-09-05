@@ -65,3 +65,24 @@ main, .site-main, .page, .page-content {
   background: var(--primary-background-color) !important;
   color: var(--primary-text-color) !important;
 }
+
+/* 아이콘 크기를 무조건 고정 (덮어쓰기 방지) */
+#themeToggle.theme-toggle .icon {
+  width: 36px !important;
+  height: 36px !important;
+  min-width: 36px !important;
+  min-height: 36px !important;
+  max-width: 36px !important;
+  max-height: 36px !important;
+  display: block !important;
+  stroke: currentColor !important;
+  fill: none !important;
+  stroke-width: 2 !important;
+  stroke-linecap: round !important;
+  stroke-linejoin: round !important;
+}
+#themeToggle.theme-toggle .icon-moon {
+  fill: currentColor !important;
+  stroke: none !important;
+}
+
