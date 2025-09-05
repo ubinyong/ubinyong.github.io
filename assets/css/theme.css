@@ -10,7 +10,6 @@ html[data-theme="dark"] {
   --primary-highlight-color: #1a1a1a;
 }
 
-/* 변수로 화면에 적용 — 다른 CSS가 덮어쓰면 !important로 잠깐 진단*/
 body {
   background: var(--primary-background-color);
   color: var(--primary-text-color);
