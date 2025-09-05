@@ -35,9 +35,9 @@ const themeMap = {
   const btn = document.getElementById('themeToggle');
   if (!btn) return;
   const isDark = (name === DARK);
-  btn.textContent = isDark ? '☀️' : '🌙'; // 라이트=🌙, 다크=☀️
-  btn.title = isDark ? '라이트 테마로' : '다크 테마로';
   btn.setAttribute('aria-pressed', String(isDark));
+  btn.setAttribute('aria-label', isDark ? 'Switch to light theme' : 'Switch to dark theme');
+  // 아이콘은 CSS가 data-theme에 따라 자동 전환
 };
 
   const init = () => {
