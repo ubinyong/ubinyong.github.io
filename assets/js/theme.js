@@ -105,3 +105,73 @@ html[data-theme="dark"] #themeToggle .icon-sun { opacity:1 !important; visibilit
     moveButtonToBodyEnd();
   }
 })();
+
+// ==== 클릭 불가 이슈: 최상위 z-index + pointer-events + 핸들러 보강 ==== 
+(function fixToggleClick() {
+  function topmostStyles() {
+    if (!document.getElementById('theme-final-clickfix')) {
+      const s = document.createElement('style');
+      s.id = 'theme-final-clickfix';
+      s.textContent = `
+#themeToggle.theme-toggle{
+  pointer-events:auto !important;
+  z-index:2147483647 !important; /* 최상위로 올림 */
+}
+#themeToggle.theme-toggle .icon{
+  pointer-events:none !important; /* 아이콘은 이벤트 안 가로채게 */
+}
+      `.trim();
+      document.head.appendChild(s);
+    }
+  }
+
+  function ensureClickHandler() {
+    const btn = document.getElementById('themeToggle');
+    if (!btn) return;
+
+    // 이미 바인딩되어 있더라도 중복 방지
+    btn.__themeBound && btn.removeEventListener('click', btn.__themeBound);
+
+    const handler = function () {
+      try {
+        const STORAGE_KEY = 'theme';
+        const html = document.documentElement;
+        const current = localStorage.getItem(STORAGE_KEY) || 'default-light';
+        const next = /dark/i.test(current) ? 'default-light' : 'default-dark';
+
+        // themeMap을 이용해 변수/속성 업데이트 (기존 apply 로직과 동일)
+        const theme = (window.themeMap || {
+          'default-light': {'background-color':'#faf9f6','text-color':'#1a1a1a','highlight-color':'#faf9f6'},
+          'default-dark' : {'background-color':'#1a1a1a','text-color':'#faf9f6','highlight-color':'#1a1a1a'}
+        })[next];
+
+        for (const [k,v] of Object.entries(theme)) {
+          html.style.setProperty(`--primary-${k}`, v);
+        }
+        html.setAttribute('data-theme', /dark/i.test(next) ? 'dark' : 'light');
+        localStorage.setItem(STORAGE_KEY, next);
+      } catch (e) {
+        console.error('Theme toggle failed:', e);
+      }
+    };
+
+    btn.addEventListener('click', handler);
+    btn.__themeBound = handler;
+  }
+
+  function moveToBodyEnd() {
+    const btn = document.getElementById('themeToggle');
+    if (btn && btn.parentElement !== document.body) {
+      document.body.appendChild(btn); // transform 조상 영향 회피
+    }
+  }
+
+  const run = () => { topmostStyles(); moveToBodyEnd(); ensureClickHandler(); };
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', run);
+  } else {
+    run();
+  }
+})();
+
