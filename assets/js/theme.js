@@ -1,12 +1,14 @@
-const themeMap = {
-  'default-light': {
-    'background-color': '#faf9f6',
-    'text-color': '#1a1a1a',
-    'highlight-color': '#faf9f6'
-  },
-  'default-dark': {
-    'background-color': '#1a1a1a',
-    'text-color': '#faf9f6',
-    'highlight-color': '#1a1a1a'
+<style>
+  :root {
+    --primary-background-color: #faf9f6;
+    --primary-text-color: #1a1a1a;
+    --primary-highlight-color: #faf9f6;
   }
-}
+  html, body { height: 100%; }
+  body {
+    margin: 0;
+    background: var(--primary-background-color);
+    color: var(--primary-text-color);
+  }
+  a { color: var(--primary-highlight-color); }
+</style>
