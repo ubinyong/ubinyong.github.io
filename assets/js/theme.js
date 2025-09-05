@@ -34,10 +34,10 @@ const themeMap = {
   const updateToggleUI = (name) => {
   const btn = document.getElementById('themeToggle');
   if (!btn) return;
-  const isDark = (name === DARK);
-  btn.setAttribute('aria-pressed', String(isDark));
-  btn.setAttribute('aria-label', isDark ? 'Switch to light theme' : 'Switch to dark theme');
-  // 아이콘은 CSS가 data-theme에 따라 자동 전환
+  const isDark = /dark/i.test(name);
+  document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
+  localStorage.setItem('theme', name);
+  updateToggleUI(name);
 };
 
   const init = () => {
@@ -50,12 +50,15 @@ const themeMap = {
 
     setVarsFromTheme(initial);
 
-    btn.addEventListener('click', () => {
-      const current = localStorage.getItem(STORAGE_KEY) || initial;
-      const next = (current === DARK) ? LIGHT : DARK;
-      setVarsFromTheme(next);
-    });
-  };
+    btn.innerHTML = `
+    <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+      <circle cx="12" cy="12" r="4" />
+      <path d="M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M2 12h3M19 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12"/>
+    </svg>
+    <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+    </svg>
+  `;
 
   document.addEventListener('DOMContentLoaded', init);
 })();
