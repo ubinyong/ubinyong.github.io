@@ -58,7 +58,7 @@ main,.site-main,.page,.page-content{
   color:var(--primary-text-color) !important;
 }
 
-/* 좌하단 고정 + 버튼 리셋 */
+/* 좌하단 고정 + 버튼 리셋 (강제) */
 #themeToggle.theme-toggle{
   -webkit-appearance:none !important;
   appearance:none !important;
@@ -79,7 +79,7 @@ html[data-theme="dark"] #themeToggle.theme-toggle{ color:#faf9f6 !important; }
 
 /* 아이콘 크기 강제 */
 #themeToggle.theme-toggle .icon{
-  width:36px !important;
+  width:36px !important;  /* 원하면 44px */
   height:36px !important;
   display:block !important;
   stroke:currentColor !important;
@@ -90,7 +90,7 @@ html[data-theme="dark"] #themeToggle.theme-toggle{ color:#faf9f6 !important; }
 }
 #themeToggle.theme-toggle .icon-moon{ fill:currentColor !important; stroke:none !important; }
 
-/* 라이트=달, 다크=해 (둘 중 하나만 표시) */
+/* 라이트=달 / 다크=해 (하나만 표시) */
 #themeToggle .icon-sun  { display:none !important; }
 #themeToggle .icon-moon { display:block !important; }
 html[data-theme="dark"] #themeToggle .icon-sun  { display:block !important; }
