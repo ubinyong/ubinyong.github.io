@@ -1,3 +1,13 @@
+/* Self-hosted Bebas Neue */
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("/assets/fonts/bebas-neue/BebasNeue-Regular.woff2") format("woff2"),
+       url("/assets/fonts/bebas-neue/BebasNeue-Regular.woff") format("woff"); /* 옵션 */
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 /***** 1) 테마 변수 (라이트/다크) *****/
 :root {
   --primary-background-color: #faf9f6; /* light bg */
