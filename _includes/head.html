@@ -1,3 +1,18 @@
+<!-- THEME BOOTSTRAP: 첫 페인트 전에 data-theme 확정 -->
+<script>
+(function () {
+  try {
+    var saved = localStorage.getItem('theme');
+    // 기본은 라이트
+    var isDark = !!(saved && /dark/i.test(saved));
+    document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
+  } catch (e) {
+    document.documentElement.setAttribute('data-theme', 'light');
+  }
+})();
+</script>
+
+
 <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ '/assets/css/theme.css' | relative_url }}">
 <script defer src="{{ '/assets/js/theme.js' | relative_url }}"></script>
