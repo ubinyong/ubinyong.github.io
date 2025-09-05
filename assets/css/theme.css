@@ -94,6 +94,9 @@ html[data-theme="dark"] #themeToggle.theme-toggle{ color:#faf9f6 !important; }
   opacity:0 !important;
   visibility:hidden !important;
   transition:opacity .15s ease !important;
+  width:24px !important;
+  height:24px !important;
+
 }
 #themeToggle .icon-moon{ fill:currentColor !important; stroke:none !important; }
 
