@@ -18,7 +18,8 @@ Hello! I’m **Yubin Lee**, a master’s student at **CCS Graduate School of Mob
 
 I previously completed dual Bachelor’s degrees in **Mechanical Engineering** and **Engineering Design** at Kyung Hee University.  
 
-My research interests lie at the intersection of **engineering, design, and AI**, with a focus on **design optimization** and **AI-driven generative design**.  
+My research interests lie at the intersection of **engineering, design, and AI**, with a focus on **design optimization** and **AI-driven generative design**. I am particularly passionate about exploring how computational methods can accelerate the design process, expand creative possibilities, and contribute to the future of mobility and sustainable technologies. In the long term, I hope to advance methodologies that allow engineers and designers to collaborate with AI, enabling breakthroughs in mobility systems and product innovation that would be difficult to achieve through traditional approaches alone.
+
 
   </div>
 </div>
@@ -41,7 +42,7 @@ My research interests lie at the intersection of **engineering, design, and AI**
   Advisor: Prof. Jongmin Seo  
 
 
-<br><br><br>
+<br>
 
 
 ### Research Experience
@@ -57,7 +58,7 @@ My research interests lie at the intersection of **engineering, design, and AI**
   - Intracranial aneurysm modeling and CFD simulation  
 
 
-<br><br><br>
+<br>
 
 
 ### Honors & Awards
@@ -70,7 +71,7 @@ My research interests lie at the intersection of **engineering, design, and AI**
 - Forest of Talents Scholarship – KFAS (Jan. 2022 ~ Feb. 2024)   
 
 
-<br><br><br>
+<br>
 
 
 ### Conferences
@@ -80,13 +81,16 @@ My research interests lie at the intersection of **engineering, design, and AI**
    The Korean Society of Mechanical Engineers, Incheon, Korea (Nov. 2023) — **Oral Presentation**  
 
 
-<br><br><br>
+<br>
 
 
 ### Skills
 
 - **Programming & Tools**: Python (NumPy, Matplotlib), MATLAB, Arduino Uno, ESP32 C3, Altair SimLab, SimVascular, ParaView, VTK  
 - **Design & Creative Tools**: Adobe Photoshop, Illustrator, XD, Figma  
+
+
+<br>
 
 
 ---
