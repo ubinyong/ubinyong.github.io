@@ -6,11 +6,11 @@ permalink: /about/
 
 # Yubin Lee
 
-Hello! I’m **Yubin Lee**, a graduate student at **KAIST** in the **CCS Graduate School of Mobility**, where I am pursuing my M.S. degree in the **Smart Design Lab** under the supervision of Prof. Namwoo Kang.  
+Hello! I’m **Yubin Lee**, a master’s student at **CCS Graduate School of Mobility, KAIST**, conducting my research in the **Smart Design Lab** under the supervision of Prof. Namwoo Kang.
 
-Previously, I completed dual Bachelor’s degrees in **Mechanical Engineering** and **Engineering Design** at **Kyung Hee University**.  
+Previously, I completed dual Bachelor’s degrees in **Mechanical Engineering** and **Engineering Design** at Kyung Hee University.  
 
-My research lies at the intersection of **engineering, design, and AI**, with a particular focus on **design optimization** and **AI-driven generative design**.
+My research lies at the intersection of engineering, design, and AI, with a particular focus on **design optimization** and **AI-driven generative design**.
 
 ---
 
