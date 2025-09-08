@@ -1,7 +1,6 @@
 ---
 layout: description
 title: About
-permalink: /about/
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
