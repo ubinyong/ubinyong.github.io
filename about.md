@@ -4,8 +4,6 @@ title: About
 permalink: /about/
 ---
 
-# Yubin Lee
-
 Hello! I’m **Yubin Lee**, a master’s student at **CCS Graduate School of Mobility, KAIST**, conducting my research in the **Smart Design Lab** under the supervision of Prof. Namwoo Kang.
 
 Previously, I completed dual Bachelor’s degrees in **Mechanical Engineering** and **Engineering Design** at Kyung Hee University.  
@@ -39,7 +37,7 @@ My research lies at the intersection of engineering, design, and AI, with a part
 
 - **Research Student**  
   *Flow Physics & Computational Engineering Innovation Lab, Kyung Hee University*  
-  (Jul. 2022 ~ Jun. 2024)  
+  (Jul. 2022 ~ Jun. 2024)
   - Automated cardiovascular simulation workflows  
   - Intracranial aneurysm modeling and CFD simulation  
 
