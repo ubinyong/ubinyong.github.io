@@ -1,3 +1,6 @@
+/* === Google Font === */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 @mixin mediaQuery($point) {
   @if $point == phone-width {
     @media (max-width: 480px) {
@@ -9,6 +12,7 @@
     }
   }
 }
+
 html {
   --primary-background-color: white;
   --primary-text-color: #222;
@@ -23,6 +27,7 @@ body {
   transition: background 0.1s ease-in, color 0.1s ease-in;
   // font-size: 120%;
 }
+
 .mid-section-home {
   text-align: center;
   display: flex;
@@ -34,17 +39,20 @@ body {
   height: 100vh;
   margin: auto;
   font-size: 1.5rem;
+
   @include mediaQuery(phone-width) {
     font-size: 1 rem;
     span {
       display: none;
     }
   }
+
   h1 {
     font-size: 3.5rem;
     font-weight: 600;
   }
 }
+
 .sub-heading {
   width: 80%;
   margin: 0 auto;
@@ -55,11 +63,13 @@ body {
     min-width: 270px;
   }
 }
+
 .summary-about-me {
   width: 50%;
   text-align: right;
   padding-right: 20px;
 }
+
 .nav-link {
   ul {
     padding-inline-start: 0;
@@ -79,8 +89,7 @@ body {
   border-left: 2px solid var(--primary-text-color);
   width: 50%;
   padding-left: 20px;
-  // .toNav {
-  // }
+
   @include mediaQuery(phone-width) {
     li {
       display: block;
@@ -88,29 +97,34 @@ body {
     }
   }
 }
+
 .mid-section-cover {
   width: 60%;
   margin: 0 auto;
   margin-top: 50px;
+
   @include mediaQuery(tablet-width) {
     width: 70%;
   }
   @include mediaQuery(phone-width) {
     width: 95%;
   }
+
   nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     border-bottom: 2px solid var(--primary-text-color);
+
     h1 {
       // align-self: flex-start;
-      font-size: 40px;
+      font-size: 40px; /* 아래 override에서 최종 덮어씀 */
       flex-grow: 2;
       text-align: left;
       margin: 10px;
     }
+
     ul {
       display: flex;
       flex-direction: row;
@@ -119,9 +133,11 @@ body {
       align-items: center;
       flex-grow: 5;
       padding-inline-start: 0;
+
       li {
         padding: 0 20px;
         list-style-type: none;
+
         a {
           text-decoration: none;
           color: var(--primary-text-color);
@@ -130,16 +146,19 @@ body {
             color: var(--primary-text-color);
           }
         }
+
         @include mediaQuery(phone-width) {
           text-align: center;
           padding: 0 10px;
         }
       }
     }
+
     @include mediaQuery(tablet-width) {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+
       ul {
         justify-content: center;
       }
@@ -148,64 +167,76 @@ body {
       }
     }
   }
+
   .sub-mid-section-cover {
     width: 100%;
     margin: 0 auto;
     overflow: hidden;
+
     img {
       max-width: 100%;
     }
+
     a {
       color: var(--primary-text-color);
-    nav {
+
+      nav {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
-        border-bottom: 2px solid  var(--primary-text-color);
+        border-bottom: 2px solid var(--primary-text-color);
+
         h1 {
-            // align-self: flex-start;
-            font-size: 40px;
-            flex-grow: 2;
-            text-align: left;
-            margin: 10px;
+          // align-self: flex-start;
+          font-size: 40px; /* 아래 override에서 최종 덮어씀 */
+          flex-grow: 2;
+          text-align: left;
+          margin: 10px;
         }
+
         ul {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: flex-end;
-            align-items: center;
-            flex-grow: 5;
-            padding-inline-start: 0;
-            li {
-                padding: 0 20px;
-                list-style-type: none;
-                a {
-                    text-decoration : none;
-                    color: var(--primary-text-color);
-                    &:hover {
-                        border-bottom: 2px solid var(--primary-text-color);
-                        color: var(--primary-text-color);
-                    }
-                }
-                @include mediaQuery(phone-width) {
-                    text-align: center;
-                    padding: 0 10px;
-                }
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: flex-end;
+          align-items: center;
+          flex-grow: 5;
+          padding-inline-start: 0;
+
+          li {
+            padding: 0 20px;
+            list-style-type: none;
+
+            a {
+              text-decoration: none;
+              color: var(--primary-text-color);
+              &:hover {
+                border-bottom: 2px solid var(--primary-text-color);
+                color: var(--primary-text-color);
+              }
             }
+
+            @include mediaQuery(phone-width) {
+              text-align: center;
+              padding: 0 10px;
+            }
+          }
         }
+
         @include mediaQuery(tablet-width) {
-            flex-direction: column;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          ul {
             justify-content: center;
-            align-items: center;
-            ul {
-                justify-content: center;
-            }
-            h1 {
-                text-align: center;
-            }
+          }
+          h1 {
+            text-align: center;
+          }
         }
+      }
     }
   }
 }
@@ -219,6 +250,7 @@ body {
   border-radius: 5px;
   border: 0;
 }
+
 .post-footer {
   margin-top: 50px;
   display: flex;
@@ -226,11 +258,14 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
 .blog-list {
   list-style: none;
   padding-left: 0;
+
   li {
     margin-bottom: 50px;
+
     .excerpt {
       font-size: 15px;
     }
@@ -245,12 +280,14 @@ body {
     }
   }
 }
+
 .blogPage-categoryList {
   ul {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
     padding-left: 0;
+
     li {
       margin: 10px 10px;
     }
@@ -260,13 +297,53 @@ body {
   }
 }
 
+/* custom md tags styles */
+div.highlight {
+  background: var(--primary-highlight-color);
+  padding: 5px;
+  border-radius: 5px;
+  margin: 10px 0px;
+  overflow: auto;
+}
 
-  //custom md tags styles
-  div.highlight {
-    background: var(--primary-highlight-color);
-    padding: 5px;
-    border-radius: 5px;
-    margin: 10px 0px;
-    overflow: auto;
+/* =========================================================
+   OVERRIDES: Menu in Bebas Neue + Smaller "Yubin Lee"
+   (아래 규칙이 위 선언들을 덮어씁니다)
+   ========================================================= */
+
+/* 메뉴 링크에 Bebas Neue 적용 */
+.mid-section-cover nav ul li a,
+.mid-section-cover .sub-mid-section-cover nav ul li a {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.2px;
+}
+
+/* 헤더 타이틀(Yubin Lee)도 Bebas Neue + 크기 축소 */
+.mid-section-cover nav h1,
+.mid-section-cover .sub-mid-section-cover nav h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 20px;   /* 메뉴(18px)와 비슷한 크기 */
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+/* 태블릿/모바일에서 균형 유지 */
+@include mediaQuery(tablet-width) {
+  .mid-section-cover nav h1,
+  .mid-section-cover .sub-mid-section-cover nav h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+@include mediaQuery(phone-width) {
+  .mid-section-cover nav ul li a,
+  .mid-section-cover .sub-mid-section-cover nav ul li a {
+    font-size: 17px;
+  }
+  .mid-section-cover nav h1,
+  .mid-section-cover .sub-mid-section-cover nav h1 {
+    font-size: 18px;
   }
 }
