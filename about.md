@@ -4,15 +4,30 @@ title: About
 permalink: /about/
 ---
 
-Hello! I’m **Yubin Lee**, a master’s student at **CCS Graduate School of Mobility, KAIST**, conducting my research in the **Smart Design Lab** under the supervision of Prof. Namwoo Kang.
+<div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
 
-Previously, I completed dual Bachelor’s degrees in **Mechanical Engineering** and **Engineering Design** at Kyung Hee University.  
+  <!-- 왼쪽: 사진 -->
+  <div style="flex: 0 0 180px;">
+    <img src="/assets/images/profile.jpg" alt="Yubin Lee" style="width:180px; border-radius: 8px;">
+  </div>
 
-My research lies at the intersection of engineering, design, and AI, with a particular focus on **design optimization** and **AI-driven generative design**.
+  <!-- 오른쪽: 소개글 -->
+  <div style="flex: 1; min-width: 250px;">
+    Hello! I’m **Yubin Lee**, a master’s student at **CCS Graduate School of Mobility, KAIST**, conducting my research in the **Smart Design Lab** under the supervision of Prof. Namwoo Kang.
 
+    <br><br>
+
+    Previously, I completed dual Bachelor’s degrees in **Mechanical Engineering** and **Engineering Design** at Kyung Hee University.  
+
+    <br><br>
+
+    My research lies at the intersection of **engineering, design, and AI**, with a particular focus on **design optimization** and **AI-driven generative design**.
+  </div>
+
+</div>
 ---
 
-## 🎓 Education
+### Education
 
 - **Korea Advanced Institute of Science and Technology**  
   *M.S. Student, CCS Graduate School of Mobility* (Sep. 2025 ~ Present)  
@@ -29,7 +44,7 @@ My research lies at the intersection of engineering, design, and AI, with a part
 
 ---
 
-## 🔬 Research Experience
+### Research Experience
 
 - **Research Intern**  
   *Affective Systems and Cognitive Lab, KAIST*  
@@ -43,7 +58,7 @@ My research lies at the intersection of engineering, design, and AI, with a part
 
 ---
 
-## 🏆 Honors & Awards
+### Honors & Awards
 
 - Academic Excellence Award – Kyung Hee University (Nov. 2024)   
 - Silver Prize – KHU Integrated Mechanical Design Contest (Jul. 2024)   
@@ -54,7 +69,7 @@ My research lies at the intersection of engineering, design, and AI, with a part
 
 ---
 
-## 📢 Conferences
+### Conferences
 
 1. Yubin Lee, Kieun Choi, Wonki Yoon, Jongmin Seo  
    *“Quantitative Analysis of Hemodynamics in Intracranial Aneurysms and Establishment of Models for Rupture Prediction Using CFD”*  
@@ -62,14 +77,14 @@ My research lies at the intersection of engineering, design, and AI, with a part
 
 ---
 
-## 🛠 Skills
+### Skills
 
 - **Programming & Tools**: Python (NumPy, Matplotlib), MATLAB, Arduino Uno, ESP32 C3, Altair SimLab, SimVascular, ParaView, VTK  
 - **Design & Creative Tools**: Adobe Photoshop, Illustrator, XD, Figma  
 
 ---
 
-## 📬 Contact
+### Contact
 
 - ✉️ iamleeyubin@gmail.com · yubin.lee@kaist.ac.kr  
 - 🌐 [Homepage](https://ubinyong.github.io)  
