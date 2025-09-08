@@ -1,7 +1,6 @@
 resume_url: "Resume.pdf"
 author_name: "Yubin Lee"
 url: https://ubinyong.github.io
-theme: dev-portfolio-blog
 
 plugins:
   - jekyll-seo-tag
