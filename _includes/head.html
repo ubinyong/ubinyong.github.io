@@ -1,31 +1,74 @@
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@400&display=swap" rel="stylesheet"
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- 2) 테마 커스텀 CSS는 링크 한 줄로만, style 안에 link 넣지 않기 -->
-<link rel="stylesheet" href="{{ '/assets/css/theme.css' | relative_url }}?v=final4">
+  <!-- 1) Google Fonts: Bebas Neue -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@400&display=swap"
+    rel="stylesheet">
 
-<style id="theme-final">
-  #themeToggle.theme-toggle{
-    -webkit-appearance:none !important; appearance:none !important;
-    background:transparent !important; border:none !important;
-    padding:.25rem .4rem !important; line-height:0 !important;
-    display:inline-flex !important; align-items:center !important; justify-content:center !important;
-    color:#1a1a1a !important; position:fixed !important; left:16px !important; bottom:16px !important;
-    z-index:99999 !important; width:44px !important; height:44px !important;
-  }
-  html[data-theme="dark"] #themeToggle.theme-toggle{ color:#faf9f6 !important; }
+  <!-- 2) 테마 커스텀 CSS -->
+  <link rel="stylesheet" href="{{ '/assets/css/theme.css' | relative_url }}?v=final5">
 
-  #themeToggle .icon{
-    position:absolute !important; inset:0 !important; margin:auto !important;
-    width:100% !important; height:100% !important; display:block !important;
-    stroke:currentColor !important; fill:none !important; stroke-width:2 !important;
-    stroke-linecap:round !important; stroke-linejoin:round !important;
-    pointer-events:none !important; opacity:0 !important; visibility:hidden !important;
-  }
-  #themeToggle .icon-moon{ fill:currentColor !important; stroke:none !important; }
+  <!-- 3) 테마 토글 버튼 스타일 (필요하다면 유지) -->
+  <style id="theme-final">
+    #themeToggle.theme-toggle {
+      -webkit-appearance: none !important;
+      appearance: none !important;
+      background: transparent !important;
+      border: none !important;
+      padding: .25rem .4rem !important;
+      line-height: 0 !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      color: #1a1a1a !important;
+      position: fixed !important;
+      left: 16px !important;
+      bottom: 16px !important;
+      z-index: 99999 !important;
+      width: 44px !important;
+      height: 44px !important;
+    }
+    html[data-theme="dark"] #themeToggle.theme-toggle {
+      color: #faf9f6 !important;
+    }
 
-  /* 라이트=달, 다크=해 */
-  #themeToggle .icon-moon{ opacity:1 !important; visibility:visible !important; }
-  html[data-theme="dark"] #themeToggle .icon-moon{ opacity:0 !important; visibility:hidden !important; }
-  html[data-theme="dark"] #themeToggle .icon-sun { opacity:1 !important; visibility:visible !important; }
+    #themeToggle .icon {
+      position: absolute !important;
+      inset: 0 !important;
+      margin: auto !important;
+      width: 100% !important;
+      height: 100% !important;
+      display: block !important;
+      stroke: currentColor !important;
+      fill: none !important;
+      stroke-width: 2 !important;
+      stroke-linecap: round !important;
+      stroke-linejoin: round !important;
+      pointer-events: none !important;
+      opacity: 0 !important;
+      visibility: hidden !important;
+    }
+    #themeToggle .icon-moon {
+      fill: currentColor !important;
+      stroke: none !important;
+    }
+
+    /* 라이트=달, 다크=해 */
+    #themeToggle .icon-moon {
+      opacity: 1 !important;
+      visibility: visible !important;
+    }
+    html[data-theme="dark"] #themeToggle .icon-moon {
+      opacity: 0 !important;
+      visibility: hidden !important;
+    }
+    html[data-theme="dark"] #themeToggle .icon-sun {
+      opacity: 1 !important;
+      visibility: visible !important;
+    }
+  </style>
+</head>
