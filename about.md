@@ -4,22 +4,27 @@ title: About
 permalink: /about/
 ---
 
-<div style="display: flex; align-items: center; gap: 50px; flex-wrap: wrap;">
-</div>
+<div style="display:flex; align-items:center; gap:50px; flex-wrap:wrap; margin: 2rem 0;">
+
   <!-- 왼쪽: 사진 -->
-  <div style="flex: 0 0 180px;">
-    <img src="/assets/images/profile.jpg" alt="Yubin Lee" style="width:180px; border-radius: 8px;">
+  <div style="flex:0 0 200px; max-width:220px;">
+    <img src="/assets/images/profile.jpg" alt="Yubin Lee" style="width:100%; border-radius:8px;">
   </div>
 
-  <!-- 오른쪽: 소개글 -->
-  <div style="flex: 1; min-width: 250px;">
-    Hello! I’m **Yubin Lee**, a master’s student at **CCS Graduate School of Mobility, KAIST**,
-    conducting my research in the **Smart Design Lab** under the supervision of Prof. Namwoo Kang.
-    Previously, I completed dual Bachelor’s degrees in **Mechanical Engineering** and **Engineering Design** at Kyung Hee University.
-    My research lies at the intersection of **engineering, design, and AI**, with a particular focus on **design optimization** and **AI-driven generative design**.
-  </div>
+  <!-- 오른쪽: 소개글 (마크다운 처리 가능) -->
+  <div style="flex:1 1 280px; min-width:260px;" markdown="1">
 
+Hello! I’m **Yubin Lee**, a master’s student at **CCS Graduate School of Mobility, KAIST**,  
+conducting my research in the **Smart Design Lab** under the supervision of Prof. Namwoo Kang.  
+
+I previously completed dual Bachelor’s degrees in **Mechanical Engineering** and **Engineering Design** at Kyung Hee University.  
+
+My research interests lie at the intersection of **engineering, design, and AI**,  
+with a focus on **design optimization** and **AI-driven generative design**.  
+
+  </div>
 </div>
+
 
 
 ### Education
@@ -39,6 +44,7 @@ permalink: /about/
 
 
 
+
 ### Research Experience
 
 - **Research Intern**  
@@ -53,6 +59,7 @@ permalink: /about/
 
 
 
+
 ### Honors & Awards
 
 - Academic Excellence Award – Kyung Hee University (Nov. 2024)   
@@ -64,6 +71,7 @@ permalink: /about/
 
 
 
+
 ### Conferences
 
 1. Yubin Lee, Kieun Choi, Wonki Yoon, Jongmin Seo  
@@ -72,12 +80,15 @@ permalink: /about/
 
 
 
+
 ### Skills
 
 - **Programming & Tools**: Python (NumPy, Matplotlib), MATLAB, Arduino Uno, ESP32 C3, Altair SimLab, SimVascular, ParaView, VTK  
 - **Design & Creative Tools**: Adobe Photoshop, Illustrator, XD, Figma  
 
+
 ---
+
 
 ### Contact
 
