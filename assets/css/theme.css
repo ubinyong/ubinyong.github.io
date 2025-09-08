@@ -115,16 +115,21 @@ html[data-theme="dark"] #themeToggle .icon-sun {
   visibility: visible !important;
 }
 
-/* 홈 타이틀에 Bebas Neue 강제 적용 (자식 span까지 포함) */
+/* 홈 타이틀 */
 #homeTitle,
 #homeTitle * {
-  font-family: "Bebas Neue", "Noto Sans KR", sans-serif !important;
+  font-family: "Bebas Neue", "Noto Sans KR", sans-serif !important; /* 영문은 Bebas Neue, 한글은 Noto Sans KR */
   font-weight: 400 !important;
-  letter-spacing: 1px !important;
   font-synthesis: none !important;
-  /* 홈 타이틀 반응형 크기 */
-#homeTitle {
-  font-size: clamp(28px, 8vw, 144px);
-  line-height: 1.1; /* 줄 간격 */
+
+  /* 크기 & 줄간격 */
+  font-size: clamp(28px, 8vw, 72px);  /* 최소 28px ~ 최대 72px, 화면 크기에 따라 자동 조정 */
+  line-height: 1.1;
+
+  /* 색상 */
+  color: var(--primary-text-color) !important; /* 라이트/다크 모드 변수 사용 */
+  letter-spacing: 1px;
+  text-align: center; /* 가운데 정렬 */
 }
+
 
