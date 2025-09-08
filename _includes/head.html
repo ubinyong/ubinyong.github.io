@@ -1,10 +1,12 @@
+<!-- 1) 폰트는 style 바깥에서 링크로 로드 -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link
+  href="https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@400&display=swap"
+  rel="stylesheet">
 
-
-
-<link rel="stylesheet" href="{{ '/assets/css/theme.css' | relative_url }}?v=final2">
+<!-- 2) 테마 커스텀 CSS는 링크 한 줄로만, style 안에 link 넣지 않기 -->
+<link rel="stylesheet" href="{{ '/assets/css/theme.css' | relative_url }}?v=final3">
 
 <style id="theme-final">
   #themeToggle.theme-toggle{
