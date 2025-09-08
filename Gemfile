@@ -3,6 +3,7 @@
 source "https://rubygems.org"
 
 gem "jekyll-seo-tag"
+gem "dev-portfolio-blog"
 gem "jekyll-feed"
 gem "jekyll-sitemap"
 gem "jekyll-paginate-v2"
