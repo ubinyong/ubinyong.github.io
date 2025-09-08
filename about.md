@@ -8,19 +8,17 @@ permalink: /about/
 
   <!-- 왼쪽: 사진 -->
   <div style="flex:0 0 200px; max-width:220px;">
-    <img src="/assets/images/profile.jpg" alt="Yubin Lee" style="width:100%; border-radius:8px;">
+    <img src="/assets/images/profile.jpg" alt="Yubin Lee" style="width:100%; border-radius:0px;">
   </div>
 
   <!-- 오른쪽: 소개글 (마크다운 처리 가능) -->
   <div style="flex:1 1 280px; min-width:260px;" markdown="1">
 
-Hello! I’m **Yubin Lee**, a master’s student at **CCS Graduate School of Mobility, KAIST**,  
-conducting my research in the **Smart Design Lab** under the supervision of Prof. Namwoo Kang.  
+Hello! I’m **Yubin Lee**, a master’s student at **CCS Graduate School of Mobility, KAIST**, conducting my research in the **Smart Design Lab** under the supervision of Prof. Namwoo Kang.  
 
 I previously completed dual Bachelor’s degrees in **Mechanical Engineering** and **Engineering Design** at Kyung Hee University.  
 
-My research interests lie at the intersection of **engineering, design, and AI**,  
-with a focus on **design optimization** and **AI-driven generative design**.  
+My research interests lie at the intersection of **engineering, design, and AI**, with a focus on **design optimization** and **AI-driven generative design**.  
 
   </div>
 </div>
@@ -43,6 +41,7 @@ with a focus on **design optimization** and **AI-driven generative design**.
   Advisor: Prof. Jongmin Seo  
 
 
+<br><br><br>
 
 
 ### Research Experience
@@ -58,6 +57,7 @@ with a focus on **design optimization** and **AI-driven generative design**.
   - Intracranial aneurysm modeling and CFD simulation  
 
 
+<br><br><br>
 
 
 ### Honors & Awards
@@ -70,6 +70,7 @@ with a focus on **design optimization** and **AI-driven generative design**.
 - Forest of Talents Scholarship – KFAS (Jan. 2022 ~ Feb. 2024)   
 
 
+<br><br><br>
 
 
 ### Conferences
@@ -79,6 +80,7 @@ with a focus on **design optimization** and **AI-driven generative design**.
    The Korean Society of Mechanical Engineers, Incheon, Korea (Nov. 2023) — **Oral Presentation**  
 
 
+<br><br><br>
 
 
 ### Skills
