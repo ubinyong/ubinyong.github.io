@@ -28,17 +28,6 @@ main, .site-main, .page, .page-content {
 }
 
 /* -------------------------------
-   3) 홈 제목 폰트 (Bebas Neue)
-   ------------------------------- */
-h1#homeTitle,
-h1#homeTitle span {
-  font-family: "Bebas Neue", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
-  font-weight: 400 !important;
-  letter-spacing: 1px;
-  font-synthesis: none;
-}
-
-/* -------------------------------
    4) 테마 토글 버튼
    (좌하단 고정 + 겹친 아이콘 교대 표시)
    ------------------------------- */
@@ -116,4 +105,13 @@ html[data-theme="dark"] #themeToggle .icon-moon {
 html[data-theme="dark"] #themeToggle .icon-sun {
   opacity: 1 !important;
   visibility: visible !important;
+}
+
+/* 홈 타이틀에 Bebas Neue 강제 적용 (자식 span까지 포함) */
+#homeTitle,
+#homeTitle * {
+  font-family: "Bebas Neue", "Noto Sans KR", sans-serif !important;
+  font-weight: 400 !important;
+  letter-spacing: 1px !important;
+  font-synthesis: none !important;
 }
