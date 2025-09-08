@@ -122,4 +122,9 @@ html[data-theme="dark"] #themeToggle .icon-sun {
   font-weight: 400 !important;
   letter-spacing: 1px !important;
   font-synthesis: none !important;
+  /* 홈 타이틀 반응형 크기 */
+#homeTitle {
+  font-size: clamp(28px, 8vw, 144px);
+  line-height: 1.1; /* 줄 간격 */
 }
+
