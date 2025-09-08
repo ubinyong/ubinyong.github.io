@@ -1,5 +1,5 @@
 ---
 layout: home
-home_text: ExpLoring engieering, design, and AI
+home_text: Where engineering, design, and AI converge.
 title: Yubin Lee
 ---
