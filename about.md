@@ -4,8 +4,8 @@ title: About
 permalink: /about/
 ---
 
-<div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
-
+<div style="display: flex; align-items: center; gap: 50px; flex-wrap: wrap;">
+</div>
   <!-- 왼쪽: 사진 -->
   <div style="flex: 0 0 180px;">
     <img src="/assets/images/profile.jpg" alt="Yubin Lee" style="width:180px; border-radius: 8px;">
@@ -13,19 +13,14 @@ permalink: /about/
 
   <!-- 오른쪽: 소개글 -->
   <div style="flex: 1; min-width: 250px;">
-    Hello! I’m **Yubin Lee**, a master’s student at **CCS Graduate School of Mobility, KAIST**, conducting my research in the **Smart Design Lab** under the supervision of Prof. Namwoo Kang.
-
-    <br><br>
-
-    Previously, I completed dual Bachelor’s degrees in **Mechanical Engineering** and **Engineering Design** at Kyung Hee University.  
-
-    <br><br>
-
+    Hello! I’m **Yubin Lee**, a master’s student at **CCS Graduate School of Mobility, KAIST**,
+    conducting my research in the **Smart Design Lab** under the supervision of Prof. Namwoo Kang.
+    Previously, I completed dual Bachelor’s degrees in **Mechanical Engineering** and **Engineering Design** at Kyung Hee University.
     My research lies at the intersection of **engineering, design, and AI**, with a particular focus on **design optimization** and **AI-driven generative design**.
   </div>
 
 </div>
----
+
 
 ### Education
 
@@ -42,7 +37,7 @@ permalink: /about/
   Thesis: *Design of a Low-Touch Communication System for Connecting Young Single-Person Households*  
   Advisor: Prof. Jongmin Seo  
 
----
+
 
 ### Research Experience
 
@@ -56,7 +51,7 @@ permalink: /about/
   - Automated cardiovascular simulation workflows  
   - Intracranial aneurysm modeling and CFD simulation  
 
----
+
 
 ### Honors & Awards
 
@@ -67,7 +62,7 @@ permalink: /about/
 - Outstanding Self-Design Degree Development Award – Kyung Hee University (Jul. 2023)   
 - Forest of Talents Scholarship – KFAS (Jan. 2022 ~ Feb. 2024)   
 
----
+
 
 ### Conferences
 
@@ -75,7 +70,7 @@ permalink: /about/
    *“Quantitative Analysis of Hemodynamics in Intracranial Aneurysms and Establishment of Models for Rupture Prediction Using CFD”*  
    The Korean Society of Mechanical Engineers, Incheon, Korea (Nov. 2023) — **Oral Presentation**  
 
----
+
 
 ### Skills
 
