@@ -1,0 +1,23 @@
+{
+  "name": "web-porfolio",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">\r   <h1 align=\"center\">Developer's Portfolio ✨</h1>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ubinyong/web-porfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ubinyong/web-porfolio/issues"
+  },
+  "homepage": "https://github.com/ubinyong/web-porfolio#readme",
+  "devDependencies": {
+    "sass": "^1.92.1"
+  }
+}
