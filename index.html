@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
 	<link rel="stylesheet" href="css/animate.css">
@@ -24,6 +24,15 @@
 	<link rel="stylesheet" href="css/style.css">
 
 	<style>
+  /* DM Sans 폰트 전체 적용 */
+  body {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #333;
+  }
+
   /* 헤더에 가리지 않도록 앵커 스크롤 여유 */
   .page { scroll-margin-top: 100px; }
 
@@ -36,6 +45,279 @@
     color: #20b7bf !important;
     font-weight: 700;
   }
+
+  #navi a:hover {
+    color: #20b7bf !important;
+  }
+
+  /* 섹션 타이틀에 민트색 포인트 */
+  .heading {
+    color: #111;
+    position: relative;
+  }
+
+  .heading::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #20b7bf;
+    margin-top: 0.5rem;
+  }
+
+  /* 로고 스타일 수정 - 배경 제거, 글씨 검정 */
+  .navbar-brand {
+    background: none !important;
+    color: #000000 !important;
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
+    padding: 0 !important;
+  }
+  
+  .navbar-brand::before,
+  .navbar-brand::after {
+    display: none !important;
+  }
+
+  /* 민트색 컬러 포인트 추가 */
+  .navbar-nav .nav-link:hover {
+    color: #20b7bf !important;
+  }
+
+  .btn-primary {
+    background-color: #20b7bf !important;
+    border-color: #20b7bf !important;
+  }
+
+  .btn-primary:hover {
+    background-color: #1a9da5 !important;
+    border-color: #1a9da5 !important;
+  }
+
+  /* About 섹션 이미지 - 원본 비율 유지 */
+  .img-about {
+    min-height: auto !important;
+    height: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .img-about .img {
+    background-size: contain !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    width: 100% !important;
+    padding-top: 133.33% !important;
+    position: relative !important;
+  }
+
+  /* About 섹션과 Resume 섹션 정렬 */
+  #about-section .container,
+  #resume-section .container {
+    max-width: 1140px;
+  }
+
+  /* About 섹션 완벽한 정렬 */
+  #about-section .col-md-8 {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  #about-section .row.justify-content-start {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  #about-section .col-md-12 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  #about-section .heading-section {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  #about-section .heading-section h2,
+  #about-section .heading-section p {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  /* 소셜 아이콘도 왼쪽 정렬 */
+  #about-section .social-icons {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  /* 이미지 컬럼을 왼쪽 네비게이션과 같은 너비로 */
+  #about-section .col-md-4 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  #about-section .col-md-8 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+
+  @media (max-width: 768px) {
+    #about-section .col-md-4,
+    #about-section .col-md-8 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+
+  /* 네비게이션 링크 크기 조정 */
+  .navbar-nav .nav-link {
+    font-size: 0.9rem !important;
+    font-weight: 500 !important;
+  }
+
+  /* 히어로 섹션 타이포그래피 */
+  .hero-wrap h1 {
+    font-size: 3.5rem !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.02em;
+  }
+
+  /* 히어로 섹션 오버레이 흰색으로 변경 */
+  .hero-wrap .overlay {
+    background: #ffffff !important;
+    opacity: 1 !important;
+  }
+
+  .hero-wrap h2 {
+    font-size: 1.5rem !important;
+    font-weight: 400 !important;
+    line-height: 1.6;
+  }
+
+  .hero-wrap .subheading {
+    font-size: 0.95rem !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  /* About 섹션 제목 */
+  .heading-section h2 {
+    font-size: 1.8rem !important;
+    font-weight: 700 !important;
+    margin-bottom: 1rem !important;
+  }
+
+  /* About 섹션 본문 */
+  .heading-section p {
+    font-size: 0.95rem !important;
+    line-height: 1.7 !important;
+    color: #555 !important;
+  }
+
+  /* 버튼 스타일 개선 */
+  .btn-primary {
+    font-size: 0.85rem !important;
+    font-weight: 500 !important;
+    padding: 0.6rem 1.5rem !important;
+    letter-spacing: 0.02em;
+  }
+
+  /* Resume 섹션 헤딩 */
+  .page .heading {
+    font-size: 1.6rem !important;
+    font-weight: 700 !important;
+    margin-bottom: 2rem !important;
+    color: #111;
+  }
+
+  /* Resume 항목 제목 (학교명, 회사명 등) */
+  .resume-wrap h2 {
+    font-size: 1.15rem !important;
+    font-weight: 600 !important;
+    margin-bottom: 0.4rem !important;
+    color: #222;
+    line-height: 1.4 !important;
+  }
+
+  /* Resume 날짜 */
+  .resume-wrap .date {
+    font-size: 0.8rem !important;
+    font-weight: 500 !important;
+    color: #888 !important;
+    letter-spacing: 0.03em;
+  }
+
+  /* Resume Position/직책 */
+  .resume-wrap .position {
+    font-size: 0.9rem !important;
+    font-weight: 500 !important;
+    color: #444 !important;
+    display: block;
+    margin-bottom: 0.5rem !important;
+  }
+
+  /* Resume 본문 */
+  .resume-wrap p,
+  .resume-wrap div {
+    font-size: 0.88rem !important;
+    line-height: 1.6 !important;
+    color: #666 !important;
+  }
+
+  /* 좌측 네비게이션 */
+  #navi ul li a {
+    font-size: 0.9rem !important;
+    font-weight: 500 !important;
+  }
+
+  /* News 섹션 */
+  #news-section h4 {
+    font-size: 1.05rem !important;
+    font-weight: 600 !important;
+    color: #222 !important;
+  }
+
+  #news-section .date {
+    font-size: 0.8rem !important;
+    font-weight: 500 !important;
+  }
+
+  #news-section p {
+    font-size: 0.9rem !important;
+    line-height: 1.6 !important;
+    color: #666 !important;
+  }
+
+  /* News 섹션 타이틀 */
+  #news-section .big {
+    font-size: 4rem !important;
+  }
+
+  #news-section h2.mb-4 {
+    font-size: 1.8rem !important;
+    font-weight: 700 !important;
+  }
+
+  /* 반응형 - 모바일에서 폰트 크기 조정 */
+  @media (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+    
+    .hero-wrap h1 {
+      font-size: 2.5rem !important;
+    }
+    
+    .hero-wrap h2 {
+      font-size: 1.2rem !important;
+    }
+    
+    .heading-section h2 {
+      font-size: 1.5rem !important;
+    }
+  }
 </style>
 </head>
 
@@ -44,7 +326,7 @@
 
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
 		<div class="container">
-			<a class="navbar-brand" href="index.html"><span>Y</span>ubin Lee</a>
+			<a class="navbar-brand" href="index.html">Yubin Lee</a>
 			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
 				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="oi oi-menu"></span> Menu
@@ -85,8 +367,8 @@
 
 	<section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb" id="about-section">
 		<div class="container">
-			<div class="row d-flex no-gutters">
-				<div class="col-md-6 col-lg-6 d-flex">
+			<div class="row d-flex">
+				<div class="col-md-4 col-lg-4 d-flex">
 					<div class="img-about img d-flex align-items-stretch">
 						<div class="overlay"></div>
 						<div class="img d-flex align-self-stretch align-items-center"
@@ -94,36 +376,77 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6 col-lg-6 pl-md-5 py-5">
+				<div class="col-md-8 col-lg-8 py-5">
 					<div class="row justify-content-start pb-3">
 						<div class="col-md-12 heading-section ftco-animate">
 							<div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 4px;">
   							<h2 class="mb-4" style="margin: 0;">Yubin Lee</h2>
-  							<p class="text" style="font-size: 0.95rem; margin: 0;">yubin.lee@kaist.ac.kr</p>
 							</div>
 
-							<p>I’m Yubin Lee, a master’s student at CCS Graduate School of Mobility, KAIST, conducting my research in the Smart Design Lab under the supervision of Prof. Namwoo Kang. </p>
+							<p>I'm Yubin Lee, a master's student at CCS Graduate School of Mobility, KAIST, conducting my research in the Smart Design Lab under the supervision of Prof. Namwoo Kang. </p>
 							<p>My research interests lie at the intersection of engineering, design, and AI, with a focus on design optimization and AI-driven generative design.</p>
 							
 						</div>
 					</div>
 				
-							<div class="button-group">
+							<div class="social-icons">
+
+<a href="mailto:yubin.lee@kaist.ac.kr" class="social-icon" title="Email me">
+   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+     <path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/>
+   </svg>
+</a>
 
 <a target="_blank"
    href="https://www.linkedin.com/in/yubinleeatkaist/"
-   class="btn btn-primary py-3 px-3">LinkedIn</a>
+   class="social-icon"
+   title="LinkedIn">
+   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+     <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+   </svg>
+</a>
 
 <a target="_blank"
    href="https://scholar.google.com/citations?user=KkXPMuMAAAAJ&hl=en"
-   class="btn btn-primary py-3 px-3">Google Scholar</a>
+   class="social-icon"
+   title="Google Scholar">
+   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+     <path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z"/>
+   </svg>
+</a>
 
 <style>
-  .button-group {
+  .social-icons {
     display: flex;
-    gap: 10px; /* 버튼 사이 간격 */
+    gap: 15px;
+    align-items: center;
   }
-					</style>
+
+  .social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #f8f9fa;
+    color: #333;
+    transition: all 0.3s ease;
+    border: 2px solid #e9ecef;
+  }
+
+  .social-icon:hover {
+    background-color: #20b7bf;
+    color: white;
+    border-color: #20b7bf;
+    transform: translateY(-2px);
+  }
+
+  .social-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+</style>
 
 											</div>
 										</div>
@@ -136,7 +459,7 @@
 						<div class="container">
 							<div class="row">
 							<!-- Left Navigation -->
-							<div class="col-md-3">
+							<div class="col-md-3 d-none d-md-block">
 								<nav id="navi">
 								<ul>
 									<li><a href="#page-1">Education</a></li>
@@ -289,6 +612,18 @@
 		<div class="col-md-7 heading-section text-center ftco-animate">
 			<h1 class="big big-2">News</h1>
 			<h2 class="mb-4">News</h2>
+		</div>
+		</div>
+
+		<!-- 뉴스 항목 3 -->
+		<div class="row align-items-center mb-4 ftco-animate">
+		<div class="col-md-3">
+			<img src="images/image_3.jpg" alt="news" class="img-fluid rounded">
+		</div>
+		<div class="col-md-9">
+			<span class="date text-muted d-block mb-1">Sep. 26, 2025</span>
+			<h4 class="mb-2">Celebrated my birthday with lab mates</a></h4>
+			<p class="mb-0">Grateful for their warm wishes and even a birthday song</p>
 		</div>
 		</div>
 
