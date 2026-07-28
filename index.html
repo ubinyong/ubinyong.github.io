@@ -145,40 +145,6 @@
     margin-left: 0 !important;
   }
 
-<div class="social-icons">
-  <!-- 기존 소셜 아이콘 -->
-  <a
-    href="https://github.com/YOUR_ID"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="GitHub"
-  >
-    <i class="fab fa-github"></i>
-  </a>
-
-  <a
-    href="https://www.linkedin.com/in/YOUR_ID"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="LinkedIn"
-  >
-    <i class="fab fa-linkedin"></i>
-  </a>
-
-  <!-- CV PDF -->
-  <a
-    href="https://drive.google.com/file/d/1gGvXoIW37JylwZ-JdyVkHvVS67EaosWe/view?usp=drive_link"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="View CV"
-    title="View CV"
-    class="cv-link"
-  >
-    <i class="fas fa-file-pdf"></i>
-    <span>CV</span>
-  </a>
-</div>
-		
   /* 이미지 컬럼을 왼쪽 네비게이션과 같은 너비로 */
   #about-section .col-md-4 {
     flex: 0 0 25%;
@@ -229,44 +195,6 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
   }
-/* 소셜 아이콘 왼쪽 정렬 */
-#about-section .social-icons {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 14px;
-
-  padding-left: 0 !important;
-  margin-left: 0 !important;
-}
-
-/* 모든 소셜 링크 */
-#about-section .social-icons a {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-
-  color: inherit;
-  text-decoration: none;
-  transition:
-    opacity 0.2s ease,
-    transform 0.2s ease;
-}
-
-#about-section .social-icons a:hover {
-  opacity: 0.65;
-  transform: translateY(-2px);
-}
-
-/* CV 링크 */
-#about-section .social-icons .cv-link {
-  font-size: 0.95rem;
-  font-weight: 600;
-}
-
-#about-section .social-icons .cv-link i {
-  font-size: 1.15rem;
-}
   /* About 섹션 제목 */
   .heading-section h2 {
     font-size: 1.8rem !important;
@@ -477,6 +405,18 @@
    title="Google Scholar">
    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
      <path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z"/>
+   </svg>
+</a>
+
+
+<a target="_blank"
+   rel="noopener noreferrer"
+   href="https://drive.google.com/file/d/1gGvXoIW37JylwZ-JdyVkHvVS67EaosWe/view?usp=drive_link"
+   class="social-icon"
+   title="View CV"
+   aria-label="View CV">
+   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+     <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm1 7V3.5L18.5 7H16a1 1 0 0 0-1 1v1zM8 13h2.2c1.7 0 2.8.9 2.8 2.4 0 1.6-1.1 2.6-2.9 2.6H9.5v2H8v-7zm1.5 1.3v2.4h.6c.9 0 1.4-.4 1.4-1.2 0-.8-.5-1.2-1.4-1.2h-.6z"/>
    </svg>
 </a>
 
