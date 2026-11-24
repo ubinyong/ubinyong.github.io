@@ -37,7 +37,7 @@
   .page { scroll-margin-top: 100px; }
 
   /* 빈 섹션도 활성 구간을 갖도록 최소 높이 */
-  #page-4, #page-5 { min-height: 40vh; padding-bottom: 16px; }
+  #page-3 { min-height: 40vh; padding-bottom: 16px; }
 
   /* 좌측 네비 active 표시 (a/ li 둘 다 대응) */
   #navi a.active,
@@ -293,6 +293,88 @@
     font-weight: 700 !important;
   }
 
+  /* Projects 섹션 (디자인 프로젝트) */
+  #projects-section .big {
+    font-size: 4rem !important;
+  }
+
+  #projects-section h2.mb-4 {
+    font-size: 1.8rem !important;
+    font-weight: 700 !important;
+  }
+
+  .design-project .cover {
+    display: block;
+    overflow: hidden;
+    border-radius: 6px;
+    background: #f3f4f5;
+  }
+
+  .design-project .cover img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+
+  .design-project .thumbs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-top: 8px;
+  }
+
+  .design-project .thumbs div {
+    overflow: hidden;
+    border-radius: 4px;
+    background: #f3f4f5;
+  }
+
+  .design-project .thumbs img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+
+  /* 프로젝트 이미지: 확대·드래그·길게 눌러 저장 방지 */
+  .design-project img {
+    pointer-events: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-touch-callout: none;
+  }
+
+  .design-project .date {
+    display: block;
+    margin-top: 1.1rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #888;
+    letter-spacing: 0.03em;
+  }
+
+  .design-project h4 {
+    margin: 0.3rem 0 0.5rem;
+    font-size: 1.15rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #222;
+  }
+
+  .design-project p {
+    margin-bottom: 0.4rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #666;
+  }
+
+  .design-project .meta {
+    font-size: 0.85rem;
+    color: #888;
+  }
+
   /* 반응형 - 모바일에서 폰트 크기 조정 */
   @media (max-width: 768px) {
     body {
@@ -329,6 +411,7 @@
 				<ul class="navbar-nav nav ml-auto">
 					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
 					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+					<li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
 					<li class="nav-item"><a href="#news-section" class="nav-link"><span>News</span></a></li>
 				</ul>
 			</div>
@@ -376,8 +459,8 @@
   							<h2 class="mb-4" style="margin: 0;">Yubin Lee</h2>
 							</div>
 
-							<p>I'm Yubin Lee, a master's student at CCS Graduate School of Mobility, KAIST, conducting my research in the Smart Design Lab under the supervision of Prof. Namwoo Kang. </p>
-							<p>My research interests lie at the intersection of engineering, design, and AI, with a focus on quality-diversity–driven generative design. Rather than pursuing a single optimal solution, I am interested in developing AI systems that explore rich design spaces by balancing performance and diversity, allowing engineers to discover novel, interpretable, and context-sensitive design alternatives.</p>
+							<p>I'm Yubin Lee, a master's student at the Cho Chun Shik Graduate School of Mobility, KAIST, conducting my research in the Smart Design Lab under the supervision of Prof. Namwoo Kang. </p>
+							<p>My research interests lie at the intersection of engineering, design, and AI: human-AI co-design, generative AI for engineering design, design knowledge representation, and computational design methods.</p>
 							
 						</div>
 					</div>
@@ -411,7 +494,7 @@
 
 <a target="_blank"
    rel="noopener noreferrer"
-   href="https://drive.google.com/file/d/1K-4CjXqCBAdWxjdYZSi7K1gHrvenr9lR/view?usp=sharing"
+   href="files/Yubin_Lee_CV.pdf"
    class="social-icon"
    title="View CV"
    aria-label="View CV">
@@ -468,11 +551,11 @@
 								<nav id="navi">
 								<ul>
 									<li><a href="#page-1">Education</a></li>
-									<li><a href="#page-2">Research Experiences</a></li>
-									<li><a href="#page-3">Awards and Honors</a></li>
-									<li><a href="#page-4">Publications</a></li>
-									<li><a href="#page-5">Projects</a></li>
-									<li><a href="#page-6">Conferences</a></li>
+									<li><a href="#page-2">Experience</a></li>
+									<li><a href="#page-3">Funded Research Projects</a></li>
+									<li><a href="#page-4">Conferences</a></li>
+									<li><a href="#page-5">Awards &amp; Honors</a></li>
+									<li><a href="#page-6">Technologies</a></li>
 								</ul>
 								</nav>
 							</div>
@@ -481,15 +564,16 @@
 							<div class="col-md-9" id="education-section">
 
 								<!-- Education -->
-								<div id="page-1" class="page one">
+								<div id="page-1" class="page">
 								<h2 class="heading">Education</h2>
 
 								<div class="resume-wrap d-flex ftco-animate">
 									<div class="text">
 									<span class="date">Sep. 2025 - Present</span>
 									<h2>Korea Advanced Institute of Science and Technology (KAIST)</h2>
-									<span class="position">Master's Student in CCS Graduate School of Mobility</span>
+									<span class="position">MS, Cho Chun Shik Graduate School of Mobility</span>
 									<p>Advisor: Prof. Namwoo Kang</p>
+									<p>Expected graduation: Aug. 2027</p>
 									</div>
 								</div>
 
@@ -498,26 +582,42 @@
 									<span class="date">Mar. 2021 - Aug. 2025</span>
 									<h2>Kyung Hee University</h2>
 									<span class="position">
-										Bachelor of Engineering in Mechanical Engineering <br>
-										Bachelor of Engineering in Engineering Design (Student Designed Major)
+										BE, Mechanical Engineering, <br>
+										with a Second Major in Engineering Design (Student-Designed Major)
 									</span>
 									<p>Advisor: Prof. Jongmin Seo</p>
 									</div>
 								</div>
 								</div>
 
-								<!-- Research Experiences -->
-								<div id="page-2" class="page two">
-								  <h2 class="heading">Research Experiences</h2>
-								
+								<!-- Experience -->
+								<div id="page-2" class="page">
+								  <h2 class="heading">Experience</h2>
+
 								  <div class="resume-wrap d-flex ftco-animate">
 								    <div class="text">
 								      <span class="date">Aug. 2025 - Present</span>
 								      <h2>Master's Student</h2>
 								      <span class="position">Smart Design Lab, KAIST</span>
+								      <div>
+								        <div>- Developed a VLM-assisted framework to structure reference-specific formative principles and transfer them into editable SVG/CAD geometries</div>
+								        <div>- Represented spatial and structural relationships among design elements using segmentation and graph-based methods</div>
+								        <div>- Investigating depth-aware geometric representations for automotive character-line and surface design</div>
+								      </div>
 								    </div>
 								  </div>
-								
+
+								  <div class="resume-wrap d-flex ftco-animate">
+								    <div class="text">
+								      <span class="date">Jan. 2025 - Mar. 2025</span>
+								      <h2>Design Intern, Speculative Design</h2>
+								      <span class="position">Céline Park Studio</span>
+								      <div>
+								        <div>- Conducted research and developed a project proposal for a ritual design project inspired by Jeju haenyeo culture</div>
+								      </div>
+								    </div>
+								  </div>
+
 								  <div class="resume-wrap d-flex ftco-animate">
 								    <div class="text">
 								      <span class="date">Jun. 2024 - Aug. 2024</span>
@@ -528,117 +628,86 @@
 								      </div>
 								    </div>
 								  </div>
-								
+
 								  <div class="resume-wrap d-flex ftco-animate">
 								    <div class="text">
 								      <span class="date">Jul. 2022 - Jun. 2024</span>
 								      <h2>Undergraduate Researcher</h2>
-								      <span class="position">
-								        Flow Physics &amp; Computational Engineering Innovation Lab, Kyung Hee University
-								      </span>
+								      <span class="position">Flow Physics &amp; Intelligence Lab, Kyung Hee University</span>
 								      <div>
 								        <div>- Automated cardiovascular simulation workflows</div>
 								        <div>- Intracranial aneurysm modeling and CFD simulation</div>
 								      </div>
 								    </div>
 								  </div>
+
+								  <div class="resume-wrap d-flex ftco-animate">
+								    <div class="text">
+								      <span class="date">Mar. 2021 - Aug. 2025</span>
+								      <h2>Student Formula Team, Battery Systems &amp; Simulation</h2>
+								      <span class="position">KHARS</span>
+								      <div>
+								        <div>- Performed battery-mount FEA and ventilation CFD for the KH-30 electric race car</div>
+								        <div>- Contributed to electric race car development for Student Formula competitions (2023 KSAE and KFGP)</div>
+								      </div>
+								    </div>
+								  </div>
 								</div>
 
-								<!-- Awards and Honors -->
-								<div id="page-3" class="page three">
-								<h2 class="heading">Awards and Honors</h2>
+								<!-- Funded Research Projects -->
+								<div id="page-3" class="page">
+								  <h2 class="heading">Funded Research Projects</h2>
 
-								<div class="resume-wrap d-flex ftco-animate">
-									<div class="text">
-									<span class="date">Nov. 2024</span>
-									<h2>Academic Excellence Award</h2>
-									<span class="position">Kyung Hee University</span>
-									</div>
-								</div>
-
-								<div class="resume-wrap d-flex ftco-animate">
-									<div class="text">
-									<span class="date">Nov. 2023</span>
-									<h2>National Undergraduate Fluid Mechanics Competition <br>Gold Prize</h2>
-									<span class="position">The Korean Society of Mechanical Engineers (KSME)</span>
-									</div>
-								</div>
-
-								<div class="resume-wrap d-flex ftco-animate">
-									<div class="text">
-									<span class="date">Jan. 2022 - Feb. 2024</span>
-									<h2>Forest of Talents Scholarship</h2>
-									<span class="position">Korea Foundation for Advanced Studies (KFAS)</span>
-									</div>
-								</div>
-
-								<div class="resume-wrap d-flex ftco-animate">
-									<div class="text">
-									<span class="date">Aug. 2022</span>
-									<h2>Superiority Scholarship</h2>
-									<span class="position">Kyung Hee University</span>
-									</div>
-								</div>
-								</div>
-
-								<!-- Publications -->
-								<div id="page-4" class="page four">
-								<h2 class="heading">Publications</h2>
-								<div class="resume-wrap d-flex ftco-animate">
-									<div class="text">
-									<span class="position">TBD</span>
-									</div>
-								</div>
-								</div>
-
-								<!-- Projects -->
-								<div id="page-5" class="page five">
-								  <h2 class="heading">Projects</h2>
-								
 								  <div class="row align-items-center mb-4 ftco-animate">
 								    <div class="col-md-2">
-								      <img 
-								        src="images/khnp.png" 
-								        alt="KHNP logo" 
-								        class="img-fluid rounded" 
+								      <img
+								        src="images/khnp.png"
+								        alt="KHNP logo"
+								        class="img-fluid rounded"
 								        style="max-width: 90px; width: 100%; height: auto; object-fit: contain;"
 								      >
 								    </div>
-								
+
 								    <div class="col-md-10" style="padding-left: 0;">
-								      <h4 
+								      <h4
 								        class="mb-2"
 								        style="font-size: 18px; font-weight: 600; line-height: 1.5; margin-bottom: 8px;"
 								      >
-								        Generative AI-based large-scale nuclear power plant concept design platform
+								        Generative AI-Based Large-Scale Nuclear Power Plant Concept Design Platform
 								      </h4>
-								
-								      <p 
+
+								      <p
 								        class="mb-0"
 								        style="font-size: 14px; line-height: 1.6; color: #666;"
 								      >
 								        Korea Hydro &amp; Nuclear Power Co., Ltd. (KHNP)
 								      </p>
-								
-								      <span 
+
+								      <p
+								        class="mb-0"
+								        style="font-size: 14px; line-height: 1.6; color: #666;"
+								      >
+								        - Investigating graph-based design knowledge and engineering constraints for early-stage reactor coolant system configurations
+								      </p>
+
+								      <span
 								        class="date"
 								        style="display: block; font-size: 13px; color: #999; margin-top: 4px;"
 								      >
-								        Apr. 2026
+								        Apr. 2026 - Present
 								      </span>
 								    </div>
 								  </div>
 								</div>
-									
+
 								<!-- Conferences -->
-								<div id="page-6" class="page six">
+								<div id="page-4" class="page">
 								  <h2 class="heading">Conferences</h2>
 
-
-								<div class="resume-wrap d-flex ftco-animate">
+								  <div class="resume-wrap d-flex ftco-animate">
 								    <div class="text">
 								      <h2>
-								        Reference-based shape generation through abstraction of formative principles
+								        Reference-Based Shape Generation through Abstraction of Formative Principles
 								      </h2>
 								      <span class="position">
 								        <b>Yubin Lee</b>, Sanghyuk Kim, Namwoo Kang*
@@ -648,10 +717,11 @@
 								      </span>
 								    </div>
 								  </div>
-								<div class="resume-wrap d-flex ftco-animate">
+
+								  <div class="resume-wrap d-flex ftco-animate">
 								    <div class="text">
 								      <h2>
-								        Generative Pattern Design Framework by Structuring Formative Principles from Heterogeneous References 
+								        Generative Pattern Design Framework by Structuring Formative Principles from Heterogeneous References
 								      </h2>
 								      <span class="position">
 								        <b>Yubin Lee</b>, Namwoo Kang*
@@ -661,11 +731,11 @@
 								      </span>
 								    </div>
 								  </div>
-									
+
 								  <div class="resume-wrap d-flex ftco-animate">
 								    <div class="text">
 								      <h2>
-								        Safe Reinforcement Learning for 3D Large Scale Constrained Layout Optimization
+								        Safe Reinforcement Learning for 3D Large-Scale Constrained Layout Optimization
 								      </h2>
 								      <span class="position">
 								        Jiyong Kim, Seokjun Kim, Sanghoon Jin, <b>Yubin Lee</b>, Namwoo Kang*
@@ -675,7 +745,7 @@
 								      </span>
 								    </div>
 								  </div>
-								
+
 								  <div class="resume-wrap d-flex ftco-animate">
 								    <div class="text">
 								      <h2>
@@ -689,7 +759,7 @@
 								      </span>
 								    </div>
 								  </div>
-								
+
 								  <div class="resume-wrap d-flex ftco-animate">
 								    <div class="text">
 								      <h2>
@@ -705,12 +775,123 @@
 								  </div>
 								</div>
 
+								<!-- Awards & Honors -->
+								<div id="page-5" class="page">
+								<h2 class="heading">Awards &amp; Honors</h2>
+
+								<div class="resume-wrap d-flex ftco-animate">
+									<div class="text">
+									<span class="date">Nov. 2024</span>
+									<h2>Academic Excellence Award</h2>
+									<span class="position">Kyung Hee University</span>
+									</div>
+								</div>
+
+								<div class="resume-wrap d-flex ftco-animate">
+									<div class="text">
+									<span class="date">Jan. 2022 - Feb. 2024</span>
+									<h2>Forest of Talents Scholarship</h2>
+									<span class="position">Korea Foundation for Advanced Studies (KFAS)</span>
+									</div>
+								</div>
+
+								<div class="resume-wrap d-flex ftco-animate">
+									<div class="text">
+									<span class="date">Nov. 2023</span>
+									<h2>Gold Prize, National Undergraduate Fluid Mechanics Competition</h2>
+									<span class="position">The Korean Society of Mechanical Engineers (KSME)</span>
+									</div>
+								</div>
+
+								<div class="resume-wrap d-flex ftco-animate">
+									<div class="text">
+									<span class="date">Jul. 2023</span>
+									<h2>Excellence Award, Student-Designed Major Development Competition</h2>
+									<span class="position">Kyung Hee University</span>
+									</div>
+								</div>
+
+								<div class="resume-wrap d-flex ftco-animate">
+									<div class="text">
+									<span class="date">Aug. 2022</span>
+									<h2>Superiority Scholarship</h2>
+									<span class="position">Kyung Hee University</span>
+									</div>
+								</div>
+								</div>
+
+								<!-- Technologies -->
+								<div id="page-6" class="page">
+								<h2 class="heading">Technologies</h2>
+
+								<div class="resume-wrap d-flex ftco-animate">
+									<div class="text">
+									<div><b>Programming &amp; ML:</b> Python, MATLAB, PyTorch</div>
+									<div><b>3D Modeling:</b> Fusion 360, Blender</div>
+									<div><b>CAE &amp; Simulation:</b> Ansys Mechanical, Altair SimLab, Altair HyperMesh, ParaView</div>
+									<div><b>Design Tools:</b> Adobe Photoshop, Illustrator, XD, Figma</div>
+									</div>
+								</div>
+								</div>
+
 
 							</div> <!-- /col-md-9 -->
 							</div> <!-- /row -->
 						</div> <!-- /container -->
 						</section>
 
+
+	<section class="ftco-section ftco-no-pb" id="projects-section">
+	<div class="container">
+		<div class="row justify-content-center mb-5 pb-3">
+		<div class="col-md-7 heading-section text-center ftco-animate">
+			<h1 class="big big-2">Projects</h1>
+			<h2 class="mb-4">Projects</h2>
+			<p>Selected design projects</p>
+		</div>
+		</div>
+
+		<div class="row">
+
+		<!-- 디자인 프로젝트 2 -->
+		<div class="col-md-6 mb-5 ftco-animate">
+			<div class="design-project">
+			<div class="cover">
+				<img src="images/projects/lowtouch-cover.jpg" alt="3D-printed mock-up of the low-touch communication light" draggable="false">
+			</div>
+			<div class="thumbs">
+				<div><img src="images/projects/lowtouch-circuit.jpg" alt="Circuit with LED strips, driver module, sound sensor, and ESP32-C3" draggable="false"></div>
+				<div><img src="images/projects/lowtouch-enclosure.jpg" alt="Exploded view of the enclosure" draggable="false"></div>
+				<div><img src="images/projects/lowtouch-inuse.jpg" alt="The light glowing on a desk while in use" draggable="false"></div>
+			</div>
+			<span class="date">Spring 2025</span>
+			<h4>Low-Touch Communication System for Connecting Young Single-Person Households</h4>
+			<p>Networked ambient lights that let people living alone exchange nonverbal presence signals: a breath, clap, or sigh at one device lights up the other. Built with ESP32-C3 boards communicating over UDP, a sound sensor, LED strips, and a 3D-printed enclosure, and explored in a pilot user study (n=5).</p>
+			<p class="meta">Bachelor's thesis, Kyung Hee University &middot; Advisor: Prof. Jongmin Seo</p>
+			</div>
+		</div>
+
+		<!-- 디자인 프로젝트 1 -->
+		<div class="col-md-6 mb-5 ftco-animate">
+			<div class="design-project">
+			<div class="cover">
+				<img src="images/projects/flora-cover.jpg" alt="FLORA interactive petal hanger render" draggable="false">
+			</div>
+			<div class="thumbs">
+				<div><img src="images/projects/flora-context.jpg" alt="FLORA mounted on a wall with clothes hung, render" draggable="false"></div>
+				<div><img src="images/projects/flora-circuit.jpg" alt="FLORA circuit prototype and schematic" draggable="false"></div>
+				<div><img src="images/projects/flora-mockup.jpg" alt="FLORA physical mock-up" draggable="false"></div>
+			</div>
+			<span class="date">Fall 2024</span>
+			<h4>FLORA: Interactive Petal Hanger</h4>
+			<p>A wall-mounted hanger that sprays fragrance and switches off its light when clothes are removed, then lights up again when they are hung back. Prototyped with an ESP32-C3, an ultrasonic sensor, a servo motor, and an LED strip.</p>
+			<p class="meta">Innovative Design 2 (team project) &middot; Role: circuit design and implementation, enclosure fabrication</p>
+			</div>
+		</div>
+
+		</div>
+	</div>
+	</section>
 
 	<section class="ftco-section" id="news-section">
 	<div class="container">
@@ -833,6 +1014,14 @@
 	<script src="js/scrollax.min.js"></script>
 
 	<script src="js/main.js"></script>
+
+	<script>
+		// 프로젝트 이미지: 우클릭 메뉴와 드래그 저장 방지
+		document.querySelectorAll('.design-project .cover, .design-project .thumbs').forEach(function (el) {
+			el.addEventListener('contextmenu', function (e) { e.preventDefault(); });
+			el.addEventListener('dragstart', function (e) { e.preventDefault(); });
+		});
+	</script>
 
 </body>
 
